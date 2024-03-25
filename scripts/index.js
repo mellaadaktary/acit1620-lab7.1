@@ -60,12 +60,12 @@ function setup() {
     getNumberInput().addEventListener('input', (event) => {
 
         if (getTries() !== 1) {
-            console.log(' this is working');
+            console.log(' this isworking');
             play();
             activate();
             getCheckbox().checked = false;
             getNumberInput().toggleAttribute('disabled', true);
-            getOutput().querySelector('span.last-child').textContent = '';
+            getOutput().querySelector('span:last-child').textContent = '';
             tries = getTries();
         }
 
